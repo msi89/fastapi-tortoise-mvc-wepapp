@@ -1,0 +1,11 @@
+{% extends "layout/auth.html" %} {% block title %} Sign in {% endblock %} {%
+block content %}
+<div class="form">
+  <h1>list user</h1>
+  <ul>
+    {% for users in user %}
+    <li>{{ user.name }}</li>
+    {% enfor %}
+  </ul>
+</div>
+{% endblock %}
